@@ -14,11 +14,11 @@ I = Unknown('I', num_infectious, 'infectious')
 R = Unknown('R', num_recovered, 'recovered')
 
 # parameters
-beta = .1  # disease ratio
-gamma = .05  # recovery ratio
-mu = .00025  # population birth rate
-nu = .0001  # population death rate
-xi = 0.002  # ratio of recovered people who become susceptible again
+beta = .001  # disease ratio
+gamma = .0001  # recovery ratio
+mu = .0  # population birth rate
+nu = .0  # population death rate
+xi = 0.0  # ratio of recovered people who become susceptible again
 
 # SIRS equations with vital dynamics
 S.dt = -beta * S * I / N + mu * N -nu * S + xi * R
